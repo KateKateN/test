@@ -1,0 +1,271 @@
+body{
+  background-image: url(img/bg.jpg);
+}
+.icons img{
+  width: 25px;
+}
+
+.container a{
+  text-decoration: none;
+  color: white;
+  text-shadow: -2px 0px 5px rgba(0,0,0,0.7);
+  font-family: 'Josefin Sans', sans-serif, Arail;
+  font-size: 22px;
+}
+
+
+.nav{
+  max-width: 2000px;
+  padding: 0;
+  margin: 0 auto;
+  padding: 0px 0 10px 0;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background:rgba(0,0,0,0.2);
+  padding: 10px;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+.words{
+  /*padding: 18px;*/
+  text-align: center;
+  flex:2;
+}
+.words:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+.icons{
+  text-align: center;
+  flex:1;
+}
+
+.icons:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.2s;
+}
+
+
+/*--- Gallery -----------------*/
+ .gallery{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+ }
+
+
+.gallery img{
+  border: 10px solid #fff;
+  border-bottom: 60px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+          max-width: 220px;
+          min-width: 200px;
+          cursor: pointer;
+
+}
+
+.gallery img:hover{
+   transform: scale(1.2) translate(0px, 20px);
+  transition: 1s;
+}
+ 
+/*.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 223%;
+  bottom: -15px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  color:  #363636;*/
+
+
+  /* FORM ========================*/
+  .flexform{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+header{
+background:rgba(0,0,0,0.3);
+width: 570px;
+padding: 10px;
+margin: -19px;
+padding-bottom: 20px;
+color: white;
+font-size: 30px;
+font-family: 'Pacifico', cursive;
+text-shadow: -1px 0px 2px rgba(0,0,0,0.7);
+}
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Pathway Gothic One', sans-serif;
+    letter-spacing: 1px;
+  }
+
+input:focus{
+  border: 2px solid rgba(122, 197, 205,0.8);
+  outline: none;
+  color:  #104E8B;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size:15px;
+}
+
+input:hover{
+    border: 2px solid rgba(82, 139, 139,0.8);
+  }
+
+.form-one{
+  width: 550px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.text-form-one{
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+button.right{
+     width: 150px;
+      height: 50px;
+      margin: 10px;
+      display: inline-flex;
+      cursor: pointer;
+      background: linear-gradient(to right, #6E7B8B, #A2B5CD);
+      justify-content: space-around;
+      margin-left: 20px; 
+      color: white;
+      font-size: 20px;
+      font-family: 'Pathway Gothic One', sans-serif;
+      text-shadow: -1px 0px 2px rgba(0,0,0,0.7);
+}
+
+
+button.right:hover{
+  background: linear-gradient(to right,   #696969, #9C9C9C);
+}
+
+.form-two a img{
+   width: 30px;
+   opacity: 0.8;
+   margin-left:15px; 
+}
+
+.form-two a img:hover{ 
+  opacity: 1;
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+
+.form-two{
+  width: 550px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+ input[type=text]#some-text, select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 30px 0 0 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/*  MEDIA  ---------*/
+
+@media screen and (max-width: 1200px){
+.gallery {
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+ .gallery img {
+    flex: 1 1 25%;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+    flex-grow: 1;
+
+  }
+}
+
+    /* nav --------------------------*/
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .words {
+    flex: 1 1 50%;
+  }
+
+  .icons {
+    flex: 1 1 25%;
+  }
+
+.form-one{
+  width: 350px;}
+  .form-two{
+  width: 350px;
+}
+  
+button{
+  margin-left: 50%;
+}
+
+header{
+  width:370px;
+}
+
+input[type=text]#some-text, select {
+    width: 72%;
+}
+  @media screen and (max-width: 500px) {
+    /* nav --------------------*/
+    .container {
+    flex-wrap: wrap;
+  }
+  
+  .words {
+    flex-basis: 100%;
+  }
+
+  /* gallery--------------------*/
+     .gallery {
+    flex-wrap: wrap;
+  }
+  
+  .gallery img{
+    flex-basis: 100%;
+  }
+}
+/*=============================================*/
